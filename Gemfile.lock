@@ -106,6 +106,7 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.10.10-x64-mingw32)
       mini_portile2 (~> 2.4.0)
+    pg (1.2.3-x64-mingw32)
     public_suffix (4.0.6)
     puma (3.12.6)
     rack (2.2.3)
@@ -202,6 +203,7 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.5)
   jquery-rails
+  pg
   puma (~> 3.11)
   rails (~> 5.2.4)
   sass-rails (~> 5.0)
@@ -214,7 +216,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4
