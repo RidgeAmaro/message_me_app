@@ -23,10 +23,19 @@ scroll_bottom = function() {
   }
 }
 
+submit_message = function() {
+  $("#new_message").bind("ajax:complete", function(event,xhr,status){
+    $('#message_body').val('');
+  });
+};
+
+
+
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
   $('.message .close').on('click', function() {
     $(this).closest('.message').transition('fade');
   });
+  submit_message();
   scroll_bottom();
 })
